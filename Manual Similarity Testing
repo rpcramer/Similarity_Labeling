@@ -1,4 +1,4 @@
-#lists to store results
+# lists to store results and used scenarios
 test_data = []
 used = []
 
@@ -7,7 +7,10 @@ import random
 len1 = len(jobs_text)
 len2 = len(courses_text)
 
-
+# randomly finds a job and 2 courses
+# runs until a unique selection of jobs and courses is found
+# prints out the job and 2 courses
+# asks the user which course is more similar to the job
 fail = True
 while fail == True:
     job1=(random.randint(0,len1))
